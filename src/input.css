@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-lonestar: #7000ff;
+  --color-electric-violet: #7a4ffd;
+  --color-pigment-indigo: #3b007d;
+  --color-moon-raker: #bec2f2;
+  --color-turbo: #f0f0ff;
+  --color-uz-black: #ff0000;
+
+  --color-black: #000000;
+  --color-nero: #ffffff;
+  --color-nero-900: rgba(255, 255, 255, 0.9);
+  --color-nero-600: rgba(255, 255, 255, 0.6);
+  --color-nero-500: rgba(255, 255, 255, 0.5);
+  --color-nero-0: rgba(255, 255, 255, 0);
+
+  --color-shark: #1f2026;
+  --color-mid-gray: #595b66;
+  --color-boulder: #757575;
+  --color-waterloo: #7e818c;
+  --color-manatee: #8b8e99;
+  --color-silver-chalice: #a6a6a6;
+  --color-aluminium: #a6a9b2;
+  --color-athens-gray: #f2f4f7;
+  --color-athens-gray-dark: #edeff2;
+  --color-black-haze: #f4f5f5;
+
+  --color-tuna-200: rgba(54, 54, 64, 0.2);
+  --color-tuna-250: rgba(54, 54, 64, 0.25);
+  --color-rolling-stone-200: rgba(118, 121, 127, 0.2);
+
+  --color-crimson: #ce1126;
+  --color-forest-green: #1eb53a;
+  --color-bondi-blue: #0099b5;
+  --color-chambray: #3b5998;
+  --color-jade: #ffb54c;
+  --color-diesel: #ffff00;
+  --color-fresh-eggplant: #88ff55;
+  --color-french-rose: #f4488d;
+  --color-rose: #e8007c;
+
+  --font-family: "Inter", sans-serif;
+  --font-second: "Roboto", sans-serif;
+}
+
+.container {
+  @apply w-[90%] my-0 mx-auto;
+}
+
+.eksklyuziv {
+  @apply px-2 h-[28px] bg-lonestar rounded-[4px] font-second font-medium text-[13px] leading-[162%] text-nero flex justify-center items-center absolute bottom-0 left-0;
+}
+
+.aksiya {
+  @apply px-2 h-[28px] bg-pigment-indigo rounded-[4px] font-second font-medium text-[13px] leading-[162%] text-nero flex justify-center items-center absolute bottom-0.5 left-0.5;
+}
+
+.sport {
+  @apply px-2 h-[28px] bg-uz-black rounded-[4px] font-second font-medium text-[13px] leading-[162%] text-nero flex justify-center items-center absolute bottom-0 left-0;
+}
+
+.chegirma {
+  @apply px-2 h-[28px] bg-french-rose rounded-[4px] font-second font-medium text-[13px] leading-[162%] text-nero flex justify-center items-center absolute bottom-0 left-[58px];
+}
+
+.card-h6 {
+  @apply font-family font-normal text-[15px] leading-[120%] text-shark;
+}
+
+.card-span1 {
+  @apply font-family font-light text-[14px] leading-[100%] text-manatee flex items-center gap-0.5;
+}
+
+.card-span2 {
+  @apply px-1.5 h-[22px] rounded-[4px] bg-diesel font-second font-normal text-[14px] leading-[155%] text-shark flex justify-center items-center;
+}
+
+.card-span3 {
+  @apply font-family font-normal text-[14px] leading-[120%] text-manatee animate-[line_1s_infinite_ease-in-out];
+}
+
+.card-span4 {
+  @apply font-family font-medium text-[17px] leading-[120%] text-shark;
+}
+
+.card-span5 {
+  @apply font-second font-normal text-[12px] leading-[100%] text-rose flex items-center gap-0.5;
+}
+
+.star {
+  @apply size-[14px] scale-100 animate-[star_0.8s_ease-in-out_infinite_alternate];
+}
+
+@keyframes star {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes line {
+  from {
+    text-decoration: line-through;
+    text-decoration-color: transparent;
+  }
+  to {
+    text-decoration: line-through;
+    text-decoration-color: currentColor;
+  }
+}
+
+.card {
+  @apply w-[282px] h-[554px] rounded-[8px] mb-8;
+}
+
+.main-image {
+  @apply transform scale-100 transition ease-in-out duration-500 hover:scale-108;
+}
+
+nav li {
+  @apply transform scale-100 transition ease-in-out duration-500 hover:scale-115 hover:text-shark;
+}
+
+.nav-p {
+  @apply px-2.5 flex items-center font-medium leading-[100%] text-shark hover:bg-turbo;
+}
+
+form {
+  @apply transform scale-100 transition ease-in-out duration-500 focus-within:scale-120 focus-within:translate-y-[100px];
+}
